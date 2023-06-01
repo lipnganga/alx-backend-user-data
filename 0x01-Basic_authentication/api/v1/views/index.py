@@ -23,10 +23,7 @@ def forbidden() -> str:
     """
     abort(403, description="Forbidden")
 
-
-    # status route
-
-
+    
 @app_views.route('/status', methods=['GET'], strict_slashes=False)
 def status() -> str:
     """ GET /api/v1/status
